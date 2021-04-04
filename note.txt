@@ -9,3 +9,5 @@ plt.tight_layout(): subplots not overlap
 bbox_inches = 'tight' make sure the save figure show all axes
 
 Styling: linewidth, linestyle, color
+
+testing

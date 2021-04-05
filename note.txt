@@ -10,4 +10,24 @@ bbox_inches = 'tight' make sure the save figure show all axes
 
 Styling: linewidth, linestyle, color
 
-testing
+
+2. Seaborn
+most arguments in matplotlib available in seaborn plot
+plt.legend(bbox_to_anchor = ())
+
+scatterplot: hue, palette: check color map website, size, alpha: transparency
+
+distribution plot: rug plots, histogram, KDE (Kernel Density Estimation)
+	Histogram: sns.set(style=): set style for all the plot in notebook
+	sns.kdeplot(data = pandas data frame, x= 'column name', clip: limit on x axis, bw_adjust: how much detail of distribution to show, shade = T or F)
+
+Categorical Plot: countplot and barplot
+	sns.barplot(data, x, y, estimator= mean, median, etc, ci = standard deviation)	
+
+Distribution within categories: boxplot
+Comparison plot: joinplot and pairplot
+Gridplot: create subplots, similar to hue but seprate to subplots
+	sns.catplot(data, kind=)
+	sns.PairGrid(df), map_upper, map_lower, map_diag
+
+Matrix plot: heatmap() and clustermap()
